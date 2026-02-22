@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Event Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Smart Event Dashboard</h1>
+
+    <form id="eventForm">
+      <label for="title">Event Title</label>
+      <input type="text" id="title" placeholder="Event Title" required>
+      <label for="date">Event Date</label>
+      <input type="date" id="date" placeholder="Event Date" required>
+      <label for="description">Event Description</label>
+      <textarea id="description" placeholder="Event Description"></textarea>
+      <button type="submit">Add Event</button>
+    </form>
+
+    <section id="eventContainer"></section>
+    <p id="emptyState">No events yet. Add one above.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
